@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notciário Soulcode</title>
     <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/contato.css">
 </head>
 <body>
     <header>
@@ -12,42 +13,51 @@
             <a href="/"><img class="logo" src="/assets/principal.png" alt="Icone Principal" width="50px" height="50px"></a>
 
             <div class="menu">
-                <a class="links" href="/#locais">Notícias Locais</a>
-                <a class="links" href="/#politica">Política</a>
-                <a class="links" href="/#esportes">Esportes</a>
-                <a class="links" href="/#entreterimento">Entretenimento</a>
+                <a class="links" href="#locais">Notícias Locais</a>
+                <a class="links" href="#politica">Política</a>
+                <a class="links" href="#esportes">Esportes</a>
+                <a class="links" href="#entreterimento">Entretenimento</a>
                 <a class="links" href="/pages/contato.html">Contatos</a>
             </div>
         </nav>
     </header>
     <main>
-        <h1>Contatos</h1>
-        <h2 id="contatos">Deixe aqui seu feedback</h2>
+        <div class="fale-conosco">
+            <h1 class="title-contatos">Contatos</h1>
+            <h2 id="contatos">Deixe aqui seu feedback</h2>
 
-        <h3>Insira seus dados para contato: </h3>
+            <h3>Insira seus dados para contato: </h3>
+            <div class="conteudo-principal">
+                <form action="" method="POST">
+                    <label for="nome"><strong>Nome</strong></label><br>
+                    <input type="text" maxlength="50"><br>
+                    <label for="email"><strong>Email</strong></label><br>
+                    <input type="email" maxlength="100"><br>
+                    <label for="assunto"><strong>Assunto</strong></label><br>
+                    <select name="" id="">
+                        <option value="" disabled selected>Selecione um tópico</option>
+                        <option value="">Artigo</option>
+                        <option value="">Noticia</option>
+                        <option value="">Sugestão</option>
+                    </select><br>
+                    <label for="mensagem"><strong>Mensagem</strong></label><br>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="8"></textarea><br>
+                    <button type="submit">Enviar</button> <button type="reset">Limpar</button>
 
-        <form action="" method="">
-            <label for="nome"><strong>Nome</strong></label><br>
-            <input type="text" maxlength="50"><br>
-            <label for="email"><strong>Email</strong></label><br>
-            <input type="email" maxlength="100"><br>
-            <label for="assunto"><strong>Assunto</strong></label><br>
-            <select name="" id=""></select><br>
-            <label for="mensagem"><strong>Mensagem</strong></label><br>
-            <textarea name="mensagem" id="mensagem" cols="30" rows="8"></textarea><br>
-            <button type="submit">Enviar</button> <button type="reset">Limpar</button>
-
-        </form>
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>&copy;2023 Lucas Cavassini Gomes e Soulcode.</p>
+        <h2 class="foot">Noticiário Soulcode</h2>
+        
         <nav class="contatos">
-            <a href="https://www.instagram.com/cavassinigomes/?hl=pt-br"><img src="/assets/instagram-1-svgrepo-com.svg"
-                    alt="Instagram"></a>
-            <a href="https://github.com/CavassinGomes"><img src="/assets/github-svgrepo-com.svg" alt="GitHub"></a>
-            <a href="https://www.linkedin.com/in/lucas-cavassini-gomes/"><img src="/assets/linkedin-svgrepo-com.svg"
-                    alt="Linkedin"></a>
+            <a class="rodape" href="https://www.instagram.com/cavassinigomes/?hl=pt-br">instagram</a>
+            <a class="rodape" href="https://github.com/CavassinGomes">GitHub</a>
+            <a class="rodape" href="https://www.linkedin.com/in/lucas-cavassini-gomes/">Linkedin</a>
+            <a class="rodape" href="/pages/contato.html">Fale Conosco</a>
         </nav>
+        <p>&copy;2023 Lucas Cavassini Gomes e Soulcode.</p>
     </footer>
 </body>
 </html>
