@@ -3,18 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contatos</title>
+    <title>Notciário Soulcode</title>
+    <link rel="shortcut icon" href="/assets/favicon.png" type="image/x-icon">
 </head>
 <body>
     <header>
-        
-        <a href="/"><img class="principal" src="/assets/principal.png.png" alt="Icone Principal"></a>
-        <nav>
-            <a href="/index.html#locais">Notícias Locais</a>
-            <a href="/index.html#politica">Política</a>
-            <a href="/index.html#esportes">Esportes</a>
-            <a href="/index.html#entreterimento">Entretenimento</a>
-            <a href="/pages/contato.html">Contatos</a>
+        <nav id="nav-header">
+            <a href="/"><img class="logo" src="/assets/principal.png" alt="Icone Principal" width="50px" height="50px"></a>
+
+            <div class="menu">
+                <a class="links" href="/#locais">Notícias Locais</a>
+                <a class="links" href="/#politica">Política</a>
+                <a class="links" href="/#esportes">Esportes</a>
+                <a class="links" href="/#entreterimento">Entretenimento</a>
+                <a class="links" href="/pages/contato.html">Contatos</a>
+            </div>
         </nav>
     </header>
     <main>
@@ -29,7 +32,7 @@
             <label for="email"><strong>Email</strong></label><br>
             <input type="email" maxlength="100"><br>
             <label for="assunto"><strong>Assunto</strong></label><br>
-            <input type="text" maxlength="50"><br>
+            <select name="" id=""></select><br>
             <label for="mensagem"><strong>Mensagem</strong></label><br>
             <textarea name="mensagem" id="mensagem" cols="30" rows="8"></textarea><br>
             <button type="submit">Enviar</button> <button type="reset">Limpar</button>
